@@ -1,10 +1,12 @@
-import { INode } from './binarytreetypes';
+import { IBinaryNode } from '../types';
 
-const isBalanced = (root) => {
+type Balanced = [ boolean, number];
+
+const isBalanced = (root: IBinaryNode): boolean => {
     return dfs(root)[0];
 };
 
-const dfs = (node: INode) => {
+const dfs = (node: IBinaryNode): Balanced => {
     if(!node) return [true, 0];
     let [left, right] = [dfs(node.left), dfs(node.right)];
     return [

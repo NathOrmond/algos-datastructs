@@ -1,4 +1,4 @@
-import { INode } from './binarytreetypes';
+import { IBinaryNode } from '../types';
 
 // const isSubtree = (s, t) => {
 //     if(!s) return true;

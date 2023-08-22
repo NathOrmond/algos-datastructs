@@ -1,6 +1,6 @@
-import { INode } from './binarytreetypes';
+import { IBinaryNode } from '../types';
 
-class Node implements INode { 
+class Node implements IBinaryNode { 
     
     value: any;
     left: any;
@@ -17,7 +17,7 @@ class Node implements INode {
 /** 
  * Left Subtree -> Root -> Right Subtree
  **/
- const inOrderTraversal = (root: INode) => {
+ const inOrderTraversal = (root: IBinaryNode) => {
 	if(root.value === undefined) return;
 	if(root.left !== undefined)inOrderTraversal(root.left);
 	console.log(root.value);
@@ -28,7 +28,7 @@ class Node implements INode {
  /**
   * Root -> Left Subtree -> Right Subtree
   **/
- const preOrderTraversal = ( root: INode) => {
+ const preOrderTraversal = ( root: IBinaryNode) => {
 	if(root.value === undefined) return;
 	console.log(root.value);
 	if(root.left !== undefined) preOrderTraversal(root.left);
@@ -40,7 +40,7 @@ class Node implements INode {
  * Time Complexity: O(n)
  * Space Compolexity: O(n)
  **/
-const postOrderTraversal = (rootNode: INode) => {
+const postOrderTraversal = (rootNode: IBinaryNode) => {
     // Basis
     if(rootNode.value === undefined) return;
     // Left Node First

@@ -1,9 +1,9 @@
-interface INode { 
+interface IBinaryNode { 
     value: any;
     left: any;
     right: any;
 }
 
 export { 
-    INode 
+    IBinaryNode 
 }
