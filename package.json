@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tsc && mocha dist/**/*_spec.js"
+    "performance": "TODO",
+    "test": "tsc && mocha dist/**/*.spec.js"
   },
   "author": "",
   "license": "MIT",
