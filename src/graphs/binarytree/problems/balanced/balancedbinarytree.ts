@@ -1,12 +1,12 @@
-import { IBinaryNode } from '../types';
+import { IBinaryNode } from '../../types';
 
 type Balanced = [ boolean, number];
 
-const isBalanced = (root: IBinaryNode): boolean => {
+export const isBalanced = (root: IBinaryNode): boolean => {
     return dfs(root)[0];
 };
 
-const dfs = (node: IBinaryNode): Balanced => {
+export const dfs = (node: IBinaryNode): Balanced => {
     if(!node) return [true, 0];
     let [left, right] = [dfs(node.left), dfs(node.right)];
     return [
