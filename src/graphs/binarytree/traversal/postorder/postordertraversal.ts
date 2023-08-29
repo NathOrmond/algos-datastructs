@@ -5,13 +5,14 @@ import { IBinaryNode } from "../../types";
  * Time Complexity: O(n)
  * Space Compolexity: O(n)
  **/
-const postOrderTraversal = (rootNode: IBinaryNode) => {
+export const postOrderTraversal = (rootNode: IBinaryNode, processed: Array<any>) => {
     // Basis
-    if(rootNode.value === undefined) return;
+    if(rootNode.value === undefined) return processed;
     // Left Node First
-    if(rootNode.left !== undefined ) postOrderTraversal(rootNode.left);
+    if(rootNode.left !== undefined ) postOrderTraversal(rootNode.left, processed);
     // Right Node Second
-    if(rootNode.right !== undefined ) postOrderTraversal(rootNode.right);
+    if(rootNode.right !== undefined ) postOrderTraversal(rootNode.right, processed);
     // Process Root Node
-    console.log(rootNode.value);
+    processed.push(rootNode.value);
+    return processed;
 }
