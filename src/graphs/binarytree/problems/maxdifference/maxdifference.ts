@@ -2,6 +2,7 @@ import { Node } from "../../binarytree";
 
 
 export const maxDifferencePreorderTraversal = ( node: Node, max: number, min: number ): number  => {
+    if((max === undefined) || (min === undefined)) return 0;
     if(!node || node.value === undefined) return (max-min);
     max = (node.value > max) ? node.value : max; 
     min = (node.value < min) ? node.value : min;

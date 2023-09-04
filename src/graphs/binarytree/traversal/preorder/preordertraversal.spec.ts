@@ -6,7 +6,7 @@ import { expect } from "chai";
 import { Node } from "../../binarytree";
 import { preOrderTraversal } from "./preordertraversal";
 
-describe('In Order Traversal Tests', () => {
+describe('Pre Order Traversal Tests', () => {
 
 
     /**

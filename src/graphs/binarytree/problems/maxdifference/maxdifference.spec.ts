@@ -3,7 +3,7 @@ import { expect, should } from "chai";
 import { Node } from "../../binarytree";
 import { maxDifference } from "./maxdifference";
 
-describe('In Order Traversal Tests', () => {
+describe('Max Difference Tests', () => {
 
     beforeEach(() => {
 
@@ -11,7 +11,7 @@ describe('In Order Traversal Tests', () => {
 
     it('should handle null', () => {
         const root = new Node(undefined, undefined, undefined);
-        should().equal(maxDifference(root), undefined);
+        expect(maxDifference(root)).to.equal(0);
     });   
 
     it('Should handle binary tree', () => {
@@ -45,13 +45,16 @@ describe('In Order Traversal Tests', () => {
          *                  9       3
          */
 
+        // largest = 9, smallest = 1, 9-1 = 8
+        const expected = 8;
+
         const leftLeft = new Node(9, undefined, undefined);
         const leftRight = new Node(3, undefined, undefined);
         const left = new Node(1, leftLeft, leftRight);
         const right = new Node(4, undefined, undefined);
         const root = new Node(5, left, right);
-        const expected = 9;
-        expect(maxDifference(root)).to.equal(9);
+
+        expect(maxDifference(root)).to.equal(expected);
     });
 
 });
