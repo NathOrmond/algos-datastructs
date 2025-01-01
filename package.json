@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "performance": "TODO",
-    "test": "tsc && mocha 'dist/**/*.spec.js'"
+    "test": "tsc && mocha 'dist/**/*.spec.js'", 
+    "comile": "tsc"
   },
   "author": "",
   "license": "MIT",
