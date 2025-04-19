@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 class Node {
   val: any;
   next: any;
@@ -9,7 +7,7 @@ class Node {
   }
 }
 
-const insertNode = (head , value, index) => {
+const insertNode = (head:any , value:any, index:any) => {
     if(!head) return head;
     let curr = head;
     let currIndex = 1;

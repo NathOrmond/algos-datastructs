@@ -1,9 +1,7 @@
 // test harness
 import "mocha";
 import { expect } from "chai";
-
-import { createLinkedList, Node } from "./createlinkedlist.js";
-
+import { createLinkedList, Node } from "@src/linkedlist/createlinkedlist/createlinkedlist";
 
 // @ts-nocheck
 describe("CreateLinkedList Test", function () {

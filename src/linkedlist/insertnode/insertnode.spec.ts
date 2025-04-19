@@ -2,7 +2,7 @@
 import "mocha";
 import { expect } from "chai";
 
-import { insertNode, Node } from "./insertnode.js";
+import { insertNode, Node } from "@src/linkedlist/insertnode/insertnode";
 
 
 // @ts-nocheck

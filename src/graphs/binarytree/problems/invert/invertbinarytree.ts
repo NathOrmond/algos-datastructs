@@ -1,4 +1,4 @@
-import { IBinaryNode } from '../../types';
+import { IBinaryNode } from '../../binarytree.types';
 
 const invertTree = (root: IBinaryNode): IBinaryNode => {
     if(!root) return root;

@@ -1,4 +1,4 @@
-import { IBinaryNode } from "../../types";
+import { IBinaryNode } from "../../binarytree.types";
 
 /** 
  * Left Subtree -> Root -> Right Subtree

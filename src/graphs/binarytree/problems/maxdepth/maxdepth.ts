@@ -1,4 +1,4 @@
-import { IBinaryNode } from '../../types';
+import { IBinaryNode } from '../../binarytree.types';
 
 export const maxDepth = (root: IBinaryNode): number => {
     if(!root) return 0;
