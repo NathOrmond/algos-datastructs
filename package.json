@@ -6,9 +6,12 @@
   "scripts": {
     "performance": "TODO",
     "test": "mocha -r ts-node/register -r tsconfig-paths/register 'src/**/*.spec.ts'",
+    "test:single": "mocha -r ts-node/register -r tsconfig-paths/register",
+    "test:bfs": "mocha -r ts-node/register -r tsconfig-paths/register 'src/graphs/common/breadthFirstSearch.spec.ts'",
+    "test:watch": "mocha -r ts-node/register -r tsconfig-paths/register --watch",
     "transpile": "tsc"
   },
-  "author": "",
+  "author": "Nathan Ormond",
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.3.5",

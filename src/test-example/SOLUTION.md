@@ -1,0 +1,1 @@
+- This file will specify a concpetual solution without any code details

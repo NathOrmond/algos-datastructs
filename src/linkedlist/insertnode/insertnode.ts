@@ -11,11 +11,8 @@ const insertNode = (head:any , value:any, index:any) => {
     if(!head) return head;
     let curr = head;
     let currIndex = 1;
-    console.log('index', index);
     if(index !== 0){
-      console.log("LASJHDKJASD")
       while(currIndex < index){
-        console.log(currIndex, index);
           if(curr.next){
               currIndex++;
               curr = curr.next;

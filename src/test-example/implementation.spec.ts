@@ -1,11 +1,11 @@
-// test harness 
 import "mocha";
 import { expect } from "chai";
-
-// under test
 import { ExampleType } from "./types";
 import { algorithm } from "./implementation";
 
+/**
+ * This file contains test cases
+ */
 describe('Implementation Test', function() {
 
     const myExampleProperty: string = "I am a string literal";
